@@ -1,0 +1,11 @@
+<script>window.onload=function() {
+    document.getElementById('form1').submit(); // using ID
+    }
+    </script>
+<form action='https://sso.mod.gov.my' method='POST' id='form1'>
+    {% csrf_token %}
+    {{ form }}
+	<input type='hidden' name='sistem' value='ePt'>
+    <input type="submit" value="Submit">
+</form>
+
